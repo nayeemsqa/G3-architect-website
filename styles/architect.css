@@ -1,10 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* Shared styling */
+.primary-bg-color{
+    background-color: rgba(255, 144, 14, 0.10);
+}
+.display-flex{
+    display: flex;
+}
+
+/* dark-2 */
+.grey{
+    color: #424242;
+}
+
+/* dark-3 */
+.light-grey{
+    color: #727272;
+}
+
+
+/* navbar styling */
+
+.brand{
+    font-size: 3rem;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.navitem{
+    list-style: none;
+    margin-right: 30px;
+}
+.navlinks{
+    text-decoration: none;
+}
+
+
+/* banner styling */
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-image{
+    width: 100%;
+}
+.banner-content{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.btn-primary{
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    color: white;
+    border: none;
+}
+
+
+/* Reponsive for smaller device */
+
+@media screen and (max-width: 576px) {
+    .navbar, .navlinks{
+        flex-direction: column;
+    }
 }
